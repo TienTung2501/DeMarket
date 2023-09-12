@@ -1,0 +1,14 @@
+import imageNFTs from '../index.ts'; // Import tệp JSON trực tiếp
+
+const NFT = [
+  {
+    "id": 1,
+    "image_nft": imageNFTs.NFT_1, // Truy cập các biến từ tệp JSON
+    "image_user": "",
+    "name_nft": "",
+    "name_user": "",
+    "metadatatype": "",
+    "price_nft": "",
+    "policyid": ""
+  },
+];

@@ -1,0 +1,15 @@
+.icon_container{
+    opacity: 0.8;
+    background-color: #a59292;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50px;
+    color: #fff;
+}
+.icon_container:hover{
+    opacity: 0.5;
+}
