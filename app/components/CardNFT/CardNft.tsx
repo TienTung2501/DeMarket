@@ -7,8 +7,8 @@ import Link from "next/link";
 import { BiCopyAlt } from "react-icons/bi";
 import { VscVerified } from "react-icons/vsc";
 import { AiOutlineEye } from "react-icons/ai";
-import styles from "./CardNft.module.scss";
 import IconComponent from "../Icon/IconComponent";
+import styles from "./CardNft.module.scss";
 interface CardNftPros {
   image_nft: StaticImageData;
   image_user: StaticImageData;
