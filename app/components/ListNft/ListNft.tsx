@@ -1,9 +1,11 @@
 'use client'
 import React from 'react'
 
-import CardNFT from '../CardNFT/CardNft'
+import CardNFT from './CardNFT/CardNft'
 import styles from './ListNft.module.scss'
 import images from '@/public/images'
+import Link from "next/link";
+import {GrFormNextLink} from 'react-icons/gr'
 const ListNft = () => {
     const NFTs=[
         {
@@ -88,7 +90,7 @@ const ListNft = () => {
         },
       ]
   return (
-    <div className={styles.listnft_container}>
+    <div className={styles.listnft_container_box}>
         {NFTs.map((NFT)=>{
             return<CardNFT key={NFT.id} image_nft={NFT.image_nft}
             image_user={NFT.image_user}
@@ -98,6 +100,7 @@ const ListNft = () => {
             price_nft={NFT.price_nft}
             policyid={`${NFT.policyid}`} />
         })}
+
     </div>
   )
 }

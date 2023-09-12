@@ -7,7 +7,7 @@ import Link from "next/link";
 import { BiCopyAlt } from "react-icons/bi";
 import { VscVerified } from "react-icons/vsc";
 import { AiOutlineEye } from "react-icons/ai";
-import IconComponent from "../Icon/IconComponent";
+import IconComponent from '../../Icon/IconComponent';
 import styles from "./CardNft.module.scss";
 interface CardNftPros {
   image_nft: StaticImageData;
@@ -31,7 +31,7 @@ const CardNFT = ({
     <div className={styles.cardnft_container}>
       <div className={styles.cardnft_container_image}>
         <Link href={"#"}>
-          <Image src={image_nft} width={200} height={200} alt="CardNft"></Image>
+          <Image src={image_nft} width={260} height={260} alt="CardNft"></Image>
         </Link>
         <div className={styles.cardnft_container_image_icon}>
           <IconComponent>

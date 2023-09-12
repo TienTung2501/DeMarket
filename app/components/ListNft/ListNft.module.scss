@@ -1,17 +1,17 @@
-.listnft_container{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+.listnft_container_box {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
-@media screen and (max-width:1024px) {
-    .listnft_container{
-        width: 80%;
-    }
+@media screen and (max-width: 1024px) {
+  .listnft_container {
+    width: 80%;
+  }
 }
-@media screen and (max-width:800px) {
-    .listnft_container{
-        width: 100%;
-    }
+@media screen and (max-width: 800px) {
+  .listnft_container {
+    width: 100%;
+  }
 }

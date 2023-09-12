@@ -1,23 +1,28 @@
-'use client'
+"use client";
 
-import React from "react"
-import ListNft from "../ListNft/ListNft"
-import styles from './ContainerList.module.scss'
-interface ContainerListProps{
-    title: string;
-    description: string;
+import React from "react";
+import {GrFormNextLink} from 'react-icons/gr'
+import styles from "./ContainerList.module.scss";
+import Link from "next/link";
+interface ContainerListProps {
+  title: string;
+  description: string;
+  children: React.ReactNode;
 }
 
 const ContainerList = ({
-    title,
-    description}:ContainerListProps) => {
+  title,
+  description,
+  children,
+}: ContainerListProps) => {
   return (
     <div className={styles.containerList_container}>
       <h1>{title}</h1>
       <p>{description}</p>
-      <ListNft/>
+      {children}
+      <div className={styles.container_more}><Link className={styles.link} href="#">More <GrFormNextLink/></Link></div>
     </div>
-  )
-}
+  );
+};
 
-export default ContainerList
+export default ContainerList;
