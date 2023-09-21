@@ -13,6 +13,7 @@ import NFT_12 from "./12.jpg";
 import NFT_13 from "./13.jpg";
 import NFT_14 from "./14.jpg";
 import NFT_15 from "./15.jpg";
+import NFT_16 from "./16.jpg";
 import Logo from "./Logo.png";
 import BG_1 from "./Bg1.jpg";
 import BG_2 from "./BG2.jpg";
@@ -45,6 +46,7 @@ export default {
   NFT_13,
   NFT_14,
   NFT_15,
+  NFT_16,
   Logo,
   BG_1,
   BG_2,

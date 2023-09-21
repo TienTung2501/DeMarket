@@ -1,15 +1,25 @@
 .icon_container{
     opacity: 0.8;
-    background-color: #a59292;
+    background-color: var(--backgroundcolor_30);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    margin: 0 10px;
+    // margin-left:20px ;
+    margin: 0 0px;
     border-radius: 50px;
-    color: #fff;
+    color: var(--font_color_dark);
+    font-size: 18px;
+    border: var(--border);
+    margin: 0 10px;
+    
 }
 .icon_container:hover{
     opacity: 0.5;
 }
+// @media screen and (max-width:768px){
+//     .icon_container{
+//         margin-left:20px ;
+//     }   
+// }

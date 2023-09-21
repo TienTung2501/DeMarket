@@ -92,7 +92,7 @@ const ListNft = () => {
   return (
     <div className={styles.listnft_container_box}>
         {NFTs.map((NFT)=>{
-            return<CardNFT key={NFT.id} image_nft={NFT.image_nft}
+            return<CardNFT key={NFT.id} id_nft={NFT.id} image_nft={NFT.image_nft}
             image_user={NFT.image_user}
             name_nft={`${NFT.name_nft}`}
             name_user={`${NFT.name_user}`}

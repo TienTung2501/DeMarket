@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import React from "react";
 
@@ -5,7 +6,7 @@ import { BsSearch } from "react-icons/bs";
 import styles from "./Footer.module.scss";
 import Image from "next/image";
 import images from "@/public/images";
-import { Search } from "../Navbar";
+import  Search  from "../NavBar/Search/Search";
 const Footer = () => {
   return (
     <div className="d-flex flex-column h-100 bg-light">

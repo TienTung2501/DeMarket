@@ -1,12 +1,12 @@
 import "@/public/styles/globals.scss";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Open_Sans } from "next/font/google";
 import { Suspense } from "react";
 import Script from "next/script";
 
-import NavBar from "./components/Navbar/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

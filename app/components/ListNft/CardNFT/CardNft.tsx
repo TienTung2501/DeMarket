@@ -10,6 +10,7 @@ import { AiOutlineEye } from "react-icons/ai";
 import IconComponent from '../../Icon/IconComponent';
 import styles from "./CardNft.module.scss";
 interface CardNftPros {
+  id_nft:number,
   image_nft: StaticImageData;
   image_user: StaticImageData;
   name_nft: string;
@@ -17,8 +18,10 @@ interface CardNftPros {
   metadatatype: string;
   price_nft: number;
   policyid: string;
+  // have_price:boolean,
 }
 const CardNFT = ({
+  id_nft,
   image_nft,
   image_user,
   name_nft,
@@ -30,7 +33,7 @@ const CardNFT = ({
   return (
     <div className={styles.cardnft_container}>
       <div className={styles.cardnft_container_image}>
-        <Link href={"#"}>
+        <Link href={"/pages/products/"+ id_nft}>
           <Image src={image_nft} width={260} height={260} alt="CardNft"></Image>
         </Link>
         <div className={styles.cardnft_container_image_icon}>

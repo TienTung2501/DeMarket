@@ -11,6 +11,8 @@ interface BackGroundProps {
   description: string;
   image_src: StaticImageData;
   name_Bg_Page: string;
+  button1_name:string,
+  button2_name:string
 }
 import styles from "./Background.module.scss";
 const BackGround = ({
@@ -21,7 +23,9 @@ const BackGround = ({
   description,
   image_src,
   name_Bg_Page,
-  ...propagateServerField
+  button1_name,
+  button2_name
+
 }: BackGroundProps) => {
   return (
     <div className={styles.background_container}>
@@ -40,10 +44,10 @@ const BackGround = ({
           <p>{description}</p>
           <div className={styles.background_content_button_container}>
             <Link href="#">
-              <Button className="btn_config_purple">Explore</Button>
+              <Button className="btn_config_purple">{button1_name}</Button>
             </Link>
             <Link href="#">
-              <Button className="btn_config_purple">GettingStated</Button>
+              <Button className="btn_config_purple">{button2_name}</Button>
             </Link>
           </div>
         </div>
